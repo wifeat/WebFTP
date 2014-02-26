@@ -1,0 +1,1 @@
+<?php if(!defined("WebFTP")){die("Forbidden Access");}?>a:3:{s:8:"username";s:5:"admin";s:8:"password";s:32:"7fef6171469e80d32c0559f88b377245";s:4:"auth";a:1:{i:0;s:1:"*";}}

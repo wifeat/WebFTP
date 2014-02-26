@@ -1,0 +1,28 @@
+/* Generic context menu styles */
+.contextMenu { position: absolute; width: 120px; z-index: 99999; border: solid 1px #CCC; background: #EEE; padding: 0px; margin: 0px; display: none; }
+.contextMenu LI { list-style: none; padding: 0px; margin: 0px; }
+.contextMenu A { color: #333; text-decoration: none; display: block; line-height: 20px; height: 20px; background-position: 6px center; background-repeat: no-repeat; outline: none; padding: 1px 5px; padding-left: 28px; }
+.contextMenu LI.hover A { color: #FFF; background-color: #3399FF; }
+.contextMenu LI.disabled A { color: #AAA; cursor: default; }
+.contextMenu LI.hover.disabled A { background-color: transparent; }
+.contextMenu LI.separator { border-top: solid 1px #CCC; }
+/*Adding Icons*/
+.contextMenu LI A { background-repeat: no-repeat;background-image: url(menu.png); _background-image: url(menu.gif); }
+.contextMenu LI.cut A {  background-position: 0px 0px; }
+.contextMenu LI.copy A { background-position: 0px -20px; }
+.contextMenu LI.paste A { background-position: 0px -40px; }
+.contextMenu LI.edit A {  background-position: 0px -60px; }
+.contextMenu LI.delete A {background-position: 0px -80px; }
+.contextMenu LI.quit A { background-position: 0px -100px; }
+/*Adding Icons*/
+.contextMenu LI.main A { background-position: 0px -120px; }
+.contextMenu LI.set A { background-position: 0px -140px; }
+.contextMenu LI.download A { background-position: 0px -160px; }
+.contextMenu LI.open A { background-position: 0px -180px; }
+.contextMenu LI.search A { background-position: 0px -200px; }
+.contextMenu LI.zip A { background-position: 0px -220px; }
+.contextMenu LI.unzip A { background-position: 0px -240px; }
+.contextMenu LI.selectall A { background-position: 0px -260px; }
+.contextMenu LI.view A { background-position: 0px -280px; }
+.contextMenu LI.rename A { background-position: 0px -300px; }
+

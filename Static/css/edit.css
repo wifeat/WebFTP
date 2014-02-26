@@ -1,0 +1,36 @@
+@charset "utf-8";
+table { font-size:inherit; font:100% }
+
+.tree-browser { border-top:1px solid #d8d8d8; border-left:1px solid #d8d8d8; border-right:1px solid #d8d8d8; width:711px; font-family:Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-size:90%; margin:0; margin-bottom:1em }
+.tree-browser th { text-align:left; font-weight:normal; background-color:#eaeaea; color:#999; padding:.5em .3em; border-bottom:1px solid #d8d8d8 }
+.tree-browser .history { float:right; padding-right:5px }
+.tree-browser td { background:#f8f8f8 url('../images/edit/row_bg.png') 0 100% repeat-x; padding:.5em .3em; color:#484848; border-bottom:1px solid #e1e1e1 }
+.tree-browser tr.current td { background:none; background-color:#fffeeb }
+.tree-browser td.icon { width:1.3em }
+.tree-browser td a.message { color:#484848 }
+.tree-browser td span.ref { color:#aaa }
+.tree-browser.downloads td { vertical-align:top }
+.tree-browser.downloads td p { margin:0; padding:0 }
+#files .file, .file-box { border:1px solid #ccc; margin-bottom:1em }
+#files .file .highlight, .file-box .highlight { border:none; padding:0 }
+#files .file .meta, .file-box .meta { padding:0 5px; height:33px; line-height:33px; font-size:12px; color:#333; background:url('../images/edit/file_head.gif') 0 0 repeat-x #eee; text-shadow:1px 1px 0 rgba(255, 255, 255, 0.5); border-bottom:1px solid #ccc; overflow:hidden }
+#files .file .meta .info, .file-box .meta .info { float:left; height:33px; line-height:33px; font-family:Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace }
+#files .file .meta .info span, .file-box .meta .info span { padding-left:9px; margin-left:5px; background:url('../images/edit/action_separator.png') 0 50% no-repeat }
+#files .file .meta .info span:first-child, #files .file .meta .info .icon+span, .file-box .meta .info span:first-child, .file-box .meta .info .icon+span { background:transparent; margin-left:0; padding-left:0 }
+#files .file .meta .info span.icon, .file-box .meta .info span.icon { line-height:0; float:left; margin:5px 5px 0 0; padding:3px; background:#f7f7f7; border:1px solid #ccc; border-right-color:#e5e5e5; border-bottom-color:#e5e5e5; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px }
+#files .file .meta .actions, .file-box .meta .actions { float:right; height:33px; line-height:33px }
+#files .file .meta .actions li, .file-box .meta .actions li { list-style-type:none; float:left; margin:0 0 0 7px; height:33px; line-height:33px; padding-left:9px; font-size:11px; background:url('../images/edit/action_separator.png') 0 50% no-repeat }
+#files .file .meta .actions li:first-child, .file-box .meta .actions li:first-child { background:transparent; margin-left:0; padding-left:0 }
+#files .file .meta .actions li a, .file-box .meta .actions li a { font-weight:bold }
+#files .file .meta .actions li code, .file-box .meta .actions li code { font-size:11px }
+#files .file .meta .actions li label input, .file-box .meta .actions li label input { position:relative; top:1px }
+#files .file .data, .file-box .data { font-size:80%; overflow:auto; background-color:#f8f8ff }
+#files .file .data.empty, .file-box .data.empty { font-size:90%; padding:5px 10px; color:#777 }
+#files .file .data pre, #files .file .line-data, #files .file .line-number, .file-box .data pre, .file-box .line-data, .file-box .line-number { font-family:'Bitstream Vera Sans Mono', 'Courier', monospace; font-size:12px }
+#files .file .data .highlight, .file-box .data .highlight { padding:1em 0 }
+#files .file .data .highlight div, .file-box .data .highlight div { padding-left:1em }
+#files .file .data .line_numbers, .file-box .data .line_numbers { background-color:#ececec; color:#aaa; padding:1em .5em; border-right:1px solid #ddd; text-align:right }
+#files .file .data td.line_numbers, .file-box .data td.line_numbers { padding:0 .5em; font-family:'Bitstream Vera Sans Mono', 'Courier', monospace; font-size:12px; -moz-user-select:none; -khtml-user-select:none; user-select:none }
+.windows #files .file .data pre, .windows #files .file .line-data, .windows #files .file .line-number, .linux #files .file .data pre, .linux #files .file .line-data, .linux #files .file .line-number, .windows .file-box .data pre, .windows .file-box .line-data, .windows .file-box .line-number, .linux .file-box .data pre, .linux .file-box .line-data, .linux .file-box .line-number, .windows #files .file .data td.line_numbers, .linux #files .file .data td.line_numbers, .windows .file-box .data td.line_numbers, .linux .file-box .data td.line_numbers { font-family:'Bitstream Vera Sans Mono', 'Courier New', monospace }
+td.linkable-line-number { cursor:pointer }
+td.linkable-line-number:hover { text-decoration:underline }

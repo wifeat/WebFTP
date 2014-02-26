@@ -1,0 +1,106 @@
+/*
+ * jQuery.AsyncBox.CSS
+ * Copyright (c) 2011 By wuxinxi007
+ */
+html{_background:url(*) fixed}body{margin:0;_height:100%}
+#asyncbox_cover,#asyncbox_focus,.asyncbox_max{position:fixed;_position:absolute;top:0;left:0;width:100%;height:100%;
+	_top:expression(documentElement.scrollTop + documentElement.clientHeight - this.offsetHeight);
+    _left:expression(documentElement.scrollLeft + documentElement.clientWidth - this.offsetWidth)
+}
+#asyncbox_cover,#asyncbox_focus,#asyncbox_clone{display:none;overflow:hidden}
+#asyncbox_cover div,#asyncbox_cover iframe,.asyncbox_select,#asyncbox_focus{position:absolute;width:100%;height:100%;opacity:0;filter:alpha(opacity=0);background:#fff}
+.asyncbox_select{z-index:-1}
+#asyncbox_focus{z-index:3000;position:fixed;_position:absolute}
+#asyncbox_clone{z-index:3000;position:absolute;border:1px dashed #006}
+/*onload*/
+#asyncbox_load{background:url(images/asyncbox_bg.gif)}
+#asyncbox_load div{background:url(images/asyncbox_title_bottom.gif)}
+#asyncbox_load span{background:url(images/asynctips_bg.gif)}
+/*wait*/
+.asyncbox_wait{position:absolute;text-indent:3px;_text-indent:0;overflow:hidden;
+	color:#033;height:14px;padding:4px;line-height:15px;opacity:0.8;filter:alpha(opacity=80);
+	bottom:7px;left:7px;background:url(images/wait_bg.gif) no-repeat 100% 0
+}.asyncbox_wait span{float:left;width:16px;height:16px;background:url(images/wait.gif) no-repeat}
+/*AsyncBox*/
+.asyncbox_auto,.asyncbox_normal,.asyncbox_max{position:absolute;font:12px Tahoma,sans-serif}
+.asyncbox_auto table,.asyncbox_normal table,.asyncbox_max table{margin:0;padding:0}
+.asyncbox_auto ul,.asyncbox_normal ul,.asyncbox_max ul{margin:0;padding:0;list-style:none}
+.asyncbox_max{position:fixed;_position:absolute}
+.asyncbox_table{width:100%;height:100%;height:auto\9}
+.asyncbox_auto .asyncbox_table{width:auto;height:auto}
+/*asyncbox layout*/
+.b_t_l,.b_t_r,
+.b_tipsbar_l,.b_tipsbar_r,
+.b_m_l,.b_m_r,
+.b_btnsbar_l,.b_btnsbar_r,
+.b_b_l,.b_b_r{background:url(images/asyncbox_bg.gif) no-repeat;}
+/*top*/
+.b_t_m,.asyncbox_title li{height:26px;line-height:26px}
+.b_t_l,.b_t_r{width:7px;background-position:-16px -32px}
+.b_t_r{background-position:-24px -32px}
+/*middle*/
+.b_t_m,.b_b_m{background:url(images/asyncbox_title_bottom.gif) repeat-x;}
+.a_m_m,.b_m_m{background:#fff;vertical-align:top;}
+.b_m_l,.b_m_r,.b_tipsbar_l,.b_tipsbar_r,.b_btnsbar_l,.b_btnsbar_r{background-repeat:repeat-y}
+.b_m_r,.b_tipsbar_r,.b_btnsbar_r{background-position:-8px 0;}
+/*bottom*/
+.b_b_l{background-position:-16px -59px;}
+.b_b_m{height:7px;background-position:0 -27px;}
+.b_b_r{background-position:-24px -59px;}
+/*tipsbar*/
+.b_tipsbar_m{height:60px;background:#EAECE9 url(images/asyncbox_tipsbar_bg.gif) no-repeat 100% 100%;}
+.b_tipsbar_layout{padding:10px 10px 10px 60px;background:url(images/asyncBox_tipsbar_icon.gif) no-repeat 15px 15px;}
+.b_tipsbar_title{color:#333;text-align:left;}
+.b_tipsbar_content{color:#666;text-indent:2em;line-height:16px;text-align:left}
+/*asyncbox title layout*/
+.asyncbox_title li{float:left;}
+.asyncbox_title_icon{width:16px;background:url(images/icon.gif) no-repeat 0 6px;margin-right:2px}
+.asyncbox_title_tips{color:#15428B;cursor:default;padding-right:20px;overflow:hidden;-moz-user-select:none}
+/*close_btn*/
+.asyncbox_close{
+	line-height:60px;cursor:default;border:none;margin:0;padding:0;overflow:hidden;
+	position:absolute;top:6px;right:6px;width:15px;height:15px;background:url(images/asyncbox_bg.gif) no-repeat -16px 0
+}.asyncbox_close:hover{background-position:-16px -16px}
+/*asyncbox alert...*/
+.asyncbox_alert,.asyncbox_confirm,.asyncbox_success,.asyncbox_warning,.asyncbox_error{color:#033;margin:12px;line-height:18px;padding-left:46px;text-align:left;}
+.asyncbox_alert span,.asyncbox_confirm span,.asyncbox_success span,.asyncbox_warning span,.asyncbox_error span{
+	width:37px;height:37px;position:absolute;top:36px;left:18px;
+	background:url(images/asyncbox_bg.gif) no-repeat -32px 0
+}
+.asyncbox_confirm span{background-position:-69px 0}
+.asyncbox_success span{background-position:-106px 0}
+.asyncbox_warning span{background-position:-143px 0}
+.asyncbox_error span{background-position:-180px 0}
+.asyncbox_error{color:#F00}
+.asyncbox_prompt{color:#033;padding:0 10px}
+.asyncbox_prompt li{margin-top:8px}
+.asyncbox_prompt input,.asyncbox_prompt textarea{color:#666;padding:2px;border:1px solid #84A0C4;font:12px/1.3em Verdana,sans-serif;resize:none}
+.asyncbox_prompt input{height:17px}
+/*btnsbar*/
+.a_btnsbar_m,.b_btnsbar_m{height:40px;background:#fff}
+.b_btnsbar_m{background:#f8f8f8;height:38px;border-top:1px solid #fcc}
+/*btn layout*/
+.a_btnsbar_m .asyncbox_btn_layout{padding-right:10px;text-align:right}
+.b_btnsbar_m .asyncbox_btn_layout{padding-right:8px;text-align:right}
+/*btn*/
+.asyncbox_btn{
+	margin:0 0 0 10px;padding:0;display:inline-block;border:none;text-decoration:none;height:22px;cursor:default;
+	background:url(images/asyncbox_bg.gif) no-repeat -32px -38px
+}
+.asyncbox_btn span{background:url(images/asyncbox_bg.gif) no-repeat 100% -38px;color:#555;padding:3px 11px 3px 0;margin-left:12px;float:left;height:16px}
+.asyncbox_btn:hover{background-position:-32px -60px;text-decoration:none}
+.asyncbox_btn:hover span{color:#000;background-position:100% -60px}
+
+/*asynctips*/
+.asynctips{position:absolute;top:0;left:0;z-index:3000;height:38px;overflow:hidden}
+.asynctips table{margin:0;padding:0}
+.asynctips_left,.asynctips_middle,.asynctips_right,
+.asynctips_alert,.asynctips_success,.asynctips_error,.asynctips_wait{height:38px;background:url(images/asynctips_bg.gif) no-repeat}
+.asynctips_left{width:5px;background-position:0 -26px}
+.asynctips_middle{color:#555;padding:0 4px;background-repeat:repeat-x;background-position:0 -64px;font:bold 14px Tahoma,sans-serif}
+.asynctips_right{width:5px;background-position:-73px -26px}
+.asynctips_alert,.asynctips_success,.asynctips_error,.asynctips_wait{width:26px;background-repeat:repeat-x;background-position:0 -64px}
+.asynctips_alert span,.asynctips_success span,.asynctips_error span,.asynctips_wait span{display:block;width:26px;height:26px;background:url(images/asynctips_bg.gif) no-repeat}
+.asynctips_success span{background-position:-26px 0}
+.asynctips_error span{background-position:-52px 0}
+.asynctips_wait span{background:url(images/wait.gif) no-repeat 6px}
